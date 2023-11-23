@@ -1,5 +1,6 @@
 package baseball;
 
+import static baseball.BaseballConstants.RESTART_CONDITION;
 import static baseball.MessageContainer.BALL;
 import static baseball.MessageContainer.NOTHING;
 import static baseball.MessageContainer.STRIKE;
@@ -22,5 +23,9 @@ public class Umpire {
 
     public boolean endGame(String call) {
         return "3스트라이크".equals(call);
+    }
+
+    public boolean restartGame(String choice) {
+        return RESTART_CONDITION.equals(choice);
     }
 }
