@@ -6,7 +6,7 @@ import static baseball.domain.BaseballConstants.RESTART_CONDITION;
 import static baseball.domain.BaseballConstants.TOTAL_DIGITS;
 import static baseball.domain.BaseballConstants.UPPER_BOUND_OF_DIGIT;
 
-public class Validator {
+public class BaseballValidator {
     public static void check3EqualToLengthOf(String input) {
         if (TOTAL_DIGITS != input.length()) {
             throw new IllegalArgumentException();
