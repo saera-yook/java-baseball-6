@@ -19,4 +19,8 @@ public class Umpire {
         }
         return counts.get(0) + BALL + " " + counts.get(1) + STRIKE;
     }
+
+    public boolean endGame(String call) {
+        return "3스트라이크".equals(call);
+    }
 }
