@@ -1,4 +1,4 @@
-package baseball;
+package baseball.domain;
 
 public class BaseballConstants {
     public static final int TOTAL_DIGITS = 3;

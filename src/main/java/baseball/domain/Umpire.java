@@ -1,9 +1,9 @@
-package baseball;
+package baseball.domain;
 
-import static baseball.BaseballConstants.RESTART_CONDITION;
 import static baseball.MessageContainer.BALL;
 import static baseball.MessageContainer.NOTHING;
 import static baseball.MessageContainer.STRIKE;
+import static baseball.domain.BaseballConstants.RESTART_CONDITION;
 
 import java.util.List;
 

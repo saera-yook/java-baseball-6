@@ -1,10 +1,10 @@
-package baseball;
+package baseball.domain;
 
-import static baseball.BaseballConstants.END_CONDITION;
-import static baseball.BaseballConstants.LOWER_BOUND_OF_DIGIT;
-import static baseball.BaseballConstants.RESTART_CONDITION;
-import static baseball.BaseballConstants.TOTAL_DIGITS;
-import static baseball.BaseballConstants.UPPER_BOUND_OF_DIGIT;
+import static baseball.domain.BaseballConstants.END_CONDITION;
+import static baseball.domain.BaseballConstants.LOWER_BOUND_OF_DIGIT;
+import static baseball.domain.BaseballConstants.RESTART_CONDITION;
+import static baseball.domain.BaseballConstants.TOTAL_DIGITS;
+import static baseball.domain.BaseballConstants.UPPER_BOUND_OF_DIGIT;
 
 public class Validator {
     public static void check3EqualToLengthOf(String input) {

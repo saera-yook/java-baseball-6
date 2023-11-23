@@ -1,5 +1,9 @@
 package baseball;
 
+import baseball.domain.Computer;
+import baseball.domain.NumberGenerator;
+import baseball.domain.Umpire;
+
 public class Application {
     public static void main(String[] args) {
         InputView inputView = new InputView();

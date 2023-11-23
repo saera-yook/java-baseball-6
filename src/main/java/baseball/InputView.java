@@ -3,6 +3,7 @@ package baseball;
 import static baseball.MessageContainer.ASK_RESTART;
 import static baseball.MessageContainer.ENTER_NUMBERS;
 
+import baseball.domain.Validator;
 import camp.nextstep.edu.missionutils.Console;
 import java.util.List;
 
