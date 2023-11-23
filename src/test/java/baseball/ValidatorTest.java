@@ -17,4 +17,10 @@ class ValidatorTest {
     void checkIs1To9_함수로_주어진_문자열이_1부터_9까지_숫자로만_이루어져있지_않으면_예외_발생(String input) {
         assertThatThrownBy(() -> Validator.checkIs1To9(input)).isInstanceOf(IllegalArgumentException.class);
     }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"112", "007", "12344", "ddg", "1 2 3"})
+    void checkDuplicateNumber_함수로_주어진_문자열에_중복이_있으면_예외_발생(String input) {
+        assertThatThrownBy(() -> Validator.checkDuplicateNumber(input)).isInstanceOf(IllegalArgumentException.class);
+    }
 }

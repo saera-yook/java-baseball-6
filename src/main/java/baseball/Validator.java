@@ -16,4 +16,11 @@ public class Validator {
             throw new IllegalArgumentException();
         }
     }
+
+    public static void checkDuplicateNumber(String input) {
+        long totalUniqueNumber = input.chars().distinct().count();
+        if (totalUniqueNumber != input.length()) {
+            throw new IllegalArgumentException();
+        }
+    }
 }
