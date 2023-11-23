@@ -1,6 +1,8 @@
 package baseball;
 
+import static baseball.BaseballConstants.END_CONDITION;
 import static baseball.BaseballConstants.LOWER_BOUND_OF_DIGIT;
+import static baseball.BaseballConstants.RESTART_CONDITION;
 import static baseball.BaseballConstants.TOTAL_DIGITS;
 import static baseball.BaseballConstants.UPPER_BOUND_OF_DIGIT;
 
@@ -20,6 +22,12 @@ public class Validator {
     public static void checkDuplicateNumber(String input) {
         long totalUniqueNumber = input.chars().distinct().count();
         if (totalUniqueNumber != input.length()) {
+            throw new IllegalArgumentException();
+        }
+    }
+
+    public static void checkIs1Or2(String input) {
+        if (!RESTART_CONDITION.equals(input) && !END_CONDITION.equals(input)) {
             throw new IllegalArgumentException();
         }
     }
