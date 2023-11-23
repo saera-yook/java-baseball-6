@@ -1,8 +1,7 @@
-package baseball;
+package baseball.domain;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import baseball.domain.Computer;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 
