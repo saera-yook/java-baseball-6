@@ -14,7 +14,7 @@ class ValidatorTest {
 
     @ParameterizedTest
     @ValueSource(strings = {"gjkla", "12오", "509", "/3457"})
-    void checkIsDigit_함수로_주어진_문자열이_1부터_9까지_숫자로만_이루어져있지_않으면_예외_발생(String input) {
-        assertThatThrownBy(() -> Validator.checkIsDigit(input)).isInstanceOf(IllegalArgumentException.class);
+    void checkIs1To9_함수로_주어진_문자열이_1부터_9까지_숫자로만_이루어져있지_않으면_예외_발생(String input) {
+        assertThatThrownBy(() -> Validator.checkIs1To9(input)).isInstanceOf(IllegalArgumentException.class);
     }
 }

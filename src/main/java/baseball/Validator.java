@@ -11,7 +11,7 @@ public class Validator {
         }
     }
 
-    public static void checkIsDigit(String input) {
+    public static void checkIs1To9(String input) {
         if (!input.chars().allMatch(c -> c >= LOWER_BOUND_OF_DIGIT && c <= UPPER_BOUND_OF_DIGIT)) {
             throw new IllegalArgumentException();
         }
