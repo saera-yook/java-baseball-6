@@ -2,6 +2,18 @@ package baseball;
 
 public class Application {
     public static void main(String[] args) {
-        // TODO: 프로그램 구현
+        InputView inputView = new InputView();
+        OutputView outputView = new OutputView();
+        Umpire umpire = new Umpire();
+        outputView.printWelcomeMessage();
+        do {
+            Computer computer = new Computer(new NumberGenerator().createThreeDifferentDigits());
+            String call;
+            do {
+                call = umpire.call(computer.compareTo(inputView.readNumbers()));
+                outputView.printResult(call);
+            } while (!umpire.endGame(call));
+            outputView.printEndGameMessage();
+        } while (umpire.restartGame(inputView.readChoice()));
     }
 }
