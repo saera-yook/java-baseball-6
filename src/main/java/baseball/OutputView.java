@@ -12,9 +12,7 @@ public class OutputView {
         System.out.println(call);
     }
 
-    public void printEndGameMessage(boolean endGameCondition) {
-        if (endGameCondition) {
-            System.out.println(END_GAME);
-        }
+    public void printEndGameMessage() {
+        System.out.println(END_GAME);
     }
 }
